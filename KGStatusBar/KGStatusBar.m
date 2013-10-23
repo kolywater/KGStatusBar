@@ -170,7 +170,6 @@
 - (CGSize)rotatedSize
 {
     UIInterfaceOrientation interfaceOrientation = [[UIApplication sharedApplication] statusBarOrientation];
-    CGSize screenSize = [[UIScreen mainScreen] bounds].size;
     CGSize rotatedSize = screenSize;
     switch (interfaceOrientation) {
         case UIInterfaceOrientationLandscapeLeft: { rotatedSize = CGSizeMake(screenSize.height, screenSize.width); } break;
